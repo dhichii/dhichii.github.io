@@ -276,3 +276,95 @@ footer {
   padding: 24px 0;
   font-size: 14px;
 }
+
+@media(max-width: 1024px) {
+  .skill-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media(max-width: 786px) {
+  .greet {
+    font-size: 24px;
+  }
+  
+  .name {
+    font-size: 48px;
+  }
+  
+  .role {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .heading-1 {
+    font-size: 24px;
+  }
+
+  .project-item h2 {
+    font-size: 16px;
+  }
+
+  .project-item-desc {
+    font-size: 14px;
+    color: #D4D4D4;
+  }
+
+  .project-tech li {
+    padding: 6px 8px;
+  }
+
+  .project-btn img {
+    width: 20px;
+  }
+  
+  .project-btn p {
+    font-size: 14px;
+  }
+
+  section {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .skill-logo {
+    height: 42px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 480px) {
+  header {
+    padding: 0 32px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .skill-logo {
+    height: 42px;
+  }
+
+  .skill-item p {
+    font-size: 14px;
+  }
+}
