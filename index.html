@@ -13,12 +13,16 @@
   <header>
     <a href="#home" class="logo"><img src="./assets/images/logo.svg" alt="logo"></a>
 
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
     <nav>
       <ul class="menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="https://drive.google.com/file/d/187ye6H6ZjQEspMx7B9Mfs1zsbgP--h4o/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a onclick="hideSidebar()" href="#home">home</a></li>
+        <li><a onclick="hideSidebar()" href="#projects">projects</a></li>
+        <li><a onclick="hideSidebar()" href="#skills">skills</a></li>
+        <li><a onclick="hideSidebar()" href="https://drive.google.com/file/d/187ye6H6ZjQEspMx7B9Mfs1zsbgP--h4o/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -389,6 +393,8 @@
   </main>
 
   <footer>Copyright © 2024 Adhicitta Masran. All Right Reserved.</footer>
+
+  <script src="./assets/sidebar.js"></script>
 </body>
 
 </html>
