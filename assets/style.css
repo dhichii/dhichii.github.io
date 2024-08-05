@@ -263,18 +263,21 @@ section {
   color: var(--primary-color);
 }
 
+.project-item-desc {
+  min-height: 48px;
+}
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  height: fit-content;
+  gap: 8px;
   padding: 0;
 }
 
 .project-tech li {
   list-style-type: none;
-  margin-right: 8px;
-  margin-top: 8px;
   padding: 8px;
+  height: fit-content;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   font-size: 12px;
