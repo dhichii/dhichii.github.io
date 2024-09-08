@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import sourceCodeLogo from '../../assets/images/source-code.svg';
 
 export default function ProjectItem({title, description, tech, code}) {
   return (
@@ -13,7 +14,7 @@ export default function ProjectItem({title, description, tech, code}) {
         }
       </ul>
       <a href={code} target="_blank" rel="noopener noreferrer" className="project-btn">
-        <img src="./assets/images/source-code.svg" alt="source-code" />
+        <img src={sourceCodeLogo} alt="source-code" />
         <p>Source Code</p>
       </a>
     </>
