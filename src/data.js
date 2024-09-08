@@ -1,3 +1,9 @@
+import echoLogo from './assets/images/echo.svg';
+import fiberLogo from './assets/images/fiber.svg';
+import gormLogo from './assets/images/gorm.svg';
+import expressLogo from './assets/images/express.svg';
+import mysqlLogo from './assets/images/mysql.svg';
+
 const projects = [
   {
     id: 1,
@@ -123,4 +129,119 @@ const projects = [
 
 const getAllProject = () => projects;
 
-export {getAllProject}
+const skills = [
+  {
+    id: 1,
+    title: 'Golang',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
+  },
+  {
+    id: 2,
+    title: 'JavaScript',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+  },
+  {
+    id: 3,
+    title: 'TypeScript',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+  },
+  {
+    id: 4,
+    title: 'Echo (Go)',
+    src: echoLogo,
+  },
+  {
+    id: 5,
+    title: 'Gin (Go)',
+    src: 'https://raw.githubusercontent.com/gin-gonic/logo/master/color.png',
+  },
+  {
+    id: 6,
+    title: 'Fiber (Go)',
+    src: fiberLogo,
+  },
+  {
+    id: 7,
+    title: 'GORM (Go)',
+    src: gormLogo,
+  },
+  {
+    id: 8,
+    title: 'Node.js',
+    src: 'https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg',
+  },
+  {
+    id: 9,
+    title: 'Express.js',
+    src: expressLogo,
+  },
+  {
+    id: 10,
+    title: 'Hapi.js',
+    src: 'https://www.vectorlogo.zone/logos/hapijs/hapijs-icon.svg',
+  },
+  {
+    id: 11,
+    title: 'Jest',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+  },
+  {
+    id: 12,
+    title: 'MySQL',
+    src: mysqlLogo,
+  },
+  {
+    id: 13,
+    title: 'PostgreSQL',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+  },
+  {
+    id: 14,
+    title: 'Git',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+  },
+  {
+    id: 15,
+    title: 'Redis',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
+  },
+  {
+    id: 16,
+    title: 'Docker',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+  },
+  {
+    id: 17,
+    title: 'GitHub Action',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg',
+  },
+  {
+    id: 18,
+    title: 'Amazon Web Services (AWS)',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+  },
+  {
+    id: 19,
+    title: 'Google Cloud Platform (GCP)',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg',
+  },
+  {
+    id: 20,
+    title: 'Postman',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
+  },
+  {
+    id: 21,
+    title: 'gRPC',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grpc/grpc-original.svg',
+  },
+  {
+    id: 22,
+    title: 'Swagger',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg',
+  },
+]
+
+const getAllSkill = () => skills;
+
+export {getAllProject, getAllSkill}
