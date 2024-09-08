@@ -298,6 +298,7 @@ section {
 }
 
 .project-btn:hover {
+  color: #BFBFBF;
   text-decoration: underline;
 }
 
