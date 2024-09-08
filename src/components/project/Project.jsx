@@ -6,9 +6,7 @@ export default function Project({data}) {
       <ul className="project-grid">
         {
           data?.map((item) => (
-            <li key={item.id}>
-              <ProjectItem {...item}/>
-            </li>
+              <ProjectItem key={item.id} {...item}/>
           ))
         }
       </ul>
