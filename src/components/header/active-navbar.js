@@ -1,7 +1,8 @@
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('header nav a');
+
   sections.forEach(section => {
     const top = window.scrollY;
     const offset = section.offsetTop;
