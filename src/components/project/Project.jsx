@@ -1,4 +1,4 @@
-import ProjectItem from './components/project/ProjectItem';
+import ProjectItem from './ProjectItem';
 import PropTypes from 'prop-types';
 
 export default function Project({data}) {
