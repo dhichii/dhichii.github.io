@@ -1,33 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/style.css';
+import { getAllProject, getAllSkill } from './data';
+import Header from './components/header/Header';
+import Project from './components/project/Project';
+import Social from './components/Social';
+import Footer from './components/Footer';
+import Skill from './components/skill/Skill';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const projects = getAllProject()
+  const skills = getAllSkill()
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header/>
+
+      <main>
+        <Social part="main-social"/>
+
+        <section id="home" className="home">
+          <div className="home-content">
+            <h4 className="greet">Hi,</h4>
+            <h2 className="name">I am Adhicitta Masran</h2>
+            <h3 className="role">Back-End Developer</h3>
+            <a className="btn" href="mailto:adhicittamasran@gmail.com">Contact Me</a>
+          </div>
+        </section>
+
+        <section id="projects" className="projects">
+          <h1 className="heading-1">Projects</h1>
+          <Project data={projects}/>
+        </section>
+
+        <section id="skills" className="skills">
+          <h1 className="heading-1">Skills</h1>
+          <Skill data={skills}/>
+        </section>
+      </main>
+
+      <Footer/>
     </>
   )
 }
