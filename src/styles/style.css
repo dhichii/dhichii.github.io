@@ -290,6 +290,11 @@ section {
   border-radius: 16px;
 }
 
+.project-btn-container {
+  display: flex;
+  gap: 4px;
+}
+
 .project-btn {
   display: flex;
   margin-top: 16px;

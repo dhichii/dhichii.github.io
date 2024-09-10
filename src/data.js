@@ -11,7 +11,7 @@ const projects = [
     description: 'A RESTful API to assess the suitability of vocational school graduate competencies with industry',
     tech: ['TypeScript', 'Node.js', 'Express.js', 'Prisma ORM', 'PostgreSQL'],
     code: 'https://github.com/dhichii/assessment-okupasi-api',
-    src: '',
+    src: 'https://assesment-okupasi.vercel.app',
   },
   {
     id: 2,

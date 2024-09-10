@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import sourceCodeLogo from '../../assets/images/source-code.svg';
+import externalLinkLogo from '../../assets/images/external-link.svg';
 
-export default function ProjectItem({title, description, tech, code}) {
+export default function ProjectItem({title, description, tech, code, src}) {
   return (
     <li className='card project-item'>
       <h2>{title}</h2>
@@ -13,10 +14,24 @@ export default function ProjectItem({title, description, tech, code}) {
           ))
         }
       </ul>
-      <a href={code} target="_blank" rel="noopener noreferrer" className="project-btn">
-        <img src={sourceCodeLogo} alt="source-code" />
-        <p>Source Code</p>
-      </a>
+      <div className="project-btn-container">
+        {
+          code ? (
+            <a href={code} target="_blank" rel="noopener noreferrer" className="project-btn">
+              <img src={sourceCodeLogo} alt="source-code" /*title='Source Code'*/ />
+              <p>Source Code</p>
+            </a>
+          ) : null
+        }
+        {
+          src ? (
+            <a href={src} target="_blank" rel="noopener noreferrer" className="project-btn">
+              <img src={externalLinkLogo} alt="external-link" /* title='External Link' */ />
+              <p>External Link</p>
+            </a>
+          ) : null
+        }
+      </div>
     </li>
   )
 }
