@@ -84,6 +84,10 @@ header {
   padding: 0;
 }
 
+.menu li:last-child {
+  margin-left: 16px;
+}
+
 .menu-button-container {
   display: none;
 }
@@ -479,6 +483,7 @@ footer p {
   }
 
   .menu li:last-child {
+    margin-left: 0;
     margin-top: 32px;
   }
 
