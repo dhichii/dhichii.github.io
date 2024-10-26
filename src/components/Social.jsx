@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export default function Social({part}) {
   return (
     <ul className={"social " + part}>
-      <li><a href="https://www.linkedin.com/in/adhicittamasran" target="_blank" rel="noopener noreferrer">
+      <li><a href="https://www.linkedin.com/in/adhicittamasran" target="_blank" rel="noopener noreferrer" aria-label='Linkedin'>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>LinkedIn</title>
             <path
@@ -11,7 +11,7 @@ export default function Social({part}) {
               fill="#434343" />
           </svg>
         </a></li>
-      <li><a href="https://github.com/dhichii" target="_blank" rel="noopener noreferrer">
+      <li><a href="https://github.com/dhichii" target="_blank" rel="noopener noreferrer" aria-label='GitHub'>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>GitHub</title>
             <path
@@ -19,7 +19,7 @@ export default function Social({part}) {
               fill="#434343" />
           </svg>
         </a></li>
-      <li><a href="https://medium.com/@adhicittamasran" target="_blank" rel="noopener noreferrer">
+      <li><a href="https://medium.com/@adhicittamasran" target="_blank" rel="noopener noreferrer" aria-label='Medium'>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <title>Medium</title>
             <path

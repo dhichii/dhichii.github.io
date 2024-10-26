@@ -5,7 +5,7 @@ import './active-navbar';
 export default function Header() {
   return (
     <header>
-    <a href="./index.html" className="logo"><img src={logo} alt="logo"/></a>
+    <a href="./index.html" className="logo" aria-label='Home'><img src={logo} alt="logo"/></a>
 
     <input id="menu-toggle" type="checkbox" />
     <label className='menu-button-container' htmlFor="menu-toggle">
