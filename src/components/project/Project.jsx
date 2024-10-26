@@ -1,18 +1,13 @@
-import ProjectItem from './ProjectItem';
-import PropTypes from 'prop-types';
+import { getAllProject } from "../../data"
+import ProjectList from "./ProjectList"
 
-export default function Project({data}) {
+export default function Project() {
+  const projects = getAllProject()
+
   return (
-      <ul className="project-grid">
-        {
-          data?.map((item) => (
-              <ProjectItem key={item.id} {...item}/>
-          ))
-        }
-      </ul>
-  );
-}
-
-Project.propTypes = {
-  data: PropTypes.array.isRequired,
+    <section id="projects" className="projects">
+      <h1 className="heading-1">Projects</h1>
+      <ProjectList data={projects}/>
+    </section>
+  )
 }
