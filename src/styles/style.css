@@ -257,10 +257,39 @@ section {
   color: #E6E6E6;
 }
 
+.project-filter {
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+	margin-bottom: 32px;
+}
+
+.tag-btn {
+  cursor: pointer;
+  background-color: #444;
+  border: 2px solid #444;
+  text-transform: capitalize;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+.tag-btn input {
+  display: none;
+}
+
+.tag-btn:has(input:checked) {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
 .project-grid {
   display: grid;
   padding: 0;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 340px));
   justify-content: center;
   gap: 16px;
 }
