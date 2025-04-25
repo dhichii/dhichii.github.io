@@ -6,7 +6,25 @@ import mysqlLogo from './assets/images/mysql.svg';
 
 const projects = [
   {
-    id: 1,
+    id: 19,
+    title: 'KoreanCake',
+    description: 'A mobile app to track cake order process',
+    tech: ['Kotlin', 'Jetpack Compose', 'TypeScript', 'Node.js', 'Nest.js', 'Prisma ORM', 'PostgreSQL', 'Google Drive API'],
+    tags: ['android', 'backend'],
+    code: '',
+    src: 'https://drive.google.com/file/d/1co2I1P4fC_MS-5g86mPEcB1RmU7wNJxF/view?usp=sharing',
+  },
+  {
+    id: 18,
+    title: 'Daily Report',
+    description: 'A daily report website for public satisfaction index towards Minahasa Police services',
+    tech: ['HTML', 'CSS', 'Tailwind', 'Bootstrap', 'PHP', 'JavaScript', 'Laravel'],
+    tags: ['frontend', 'backend'],
+    code: '',
+    src: '',
+  },
+  {
+    id: 17,
     title: 'Wedding Invitation',
     description: 'A wedding invitation website',
     tech: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'JQuery'],
@@ -15,7 +33,7 @@ const projects = [
     src: 'https://yoknikah.vercel.app/stifan-nathania/index.html?to=Penerima',
   },
   {
-    id: 2,
+    id: 16,
     title: 'Assessment Okupasi API',
     description: 'A RESTful API to assess the suitability of vocational school graduate competencies with industry',
     tech: ['TypeScript', 'Node.js', 'Express.js', 'Prisma ORM', 'PostgreSQL'],
@@ -24,7 +42,16 @@ const projects = [
     src: 'https://assessment-okupasi.vercel.app',
   },
   {
-    id: 3,
+    id: 15,
+    title: 'Personal Portfolio',
+    description: 'A portofolio website built with React.js',
+    tech: ['HTML', 'CSS', 'JavaScript', 'React.js'],
+    tags: ['frontend'],
+    code: 'https://github.com/dhichii/assessment-okupasi-api',
+    src: 'https://adhicitta.vercel.app',
+  },
+  {
+    id: 14,
     title: 'Product gRPC Service',
     description: 'Product services with gRPC',
     tech: ['Golang', 'gRPC'],
@@ -33,7 +60,7 @@ const projects = [
     src: '',
   },
   {
-    id: 4,
+    id: 13,
     title: 'MyCampus API',
     description: 'A RESTful API to register for college in one portal',
     tech: ['TypeScript', 'Node.js', 'Express.js', 'Prisma ORM', 'PostgreSQL'],
@@ -42,7 +69,7 @@ const projects = [
     src: '',
   },
   {
-    id: 5,
+    id: 12,
     title: 'Universitas Negeri Manado KPI 1 API',
     description: 'A RESTful API to manage the alumni tracer',
     tech: ['Golang', 'Echo (Go)', 'GORM (Go)', 'MySQL'],
@@ -51,7 +78,7 @@ const projects = [
     src: '',
   },
   {
-    id: 6,
+    id: 11,
     title: 'Universitas Negeri Manado KPI 2 API',
     description: 'A RESTful API to manage student activities and achievements',
     tech: ['Golang', 'Echo (Go)', 'GORM (Go)', 'MySQL', 'Google Drive API'],
@@ -60,7 +87,7 @@ const projects = [
     src: '',
   },
   {
-    id: 7,
+    id: 10,
     title: 'Universitas Negeri Manado KPI 5 API',
     description: 'A RESTful API to manage the lecturer research',
     tech: ['Golang', 'Echo (Go)', 'GORM (Go)', 'MySQL', 'Google Drive API'],
@@ -69,7 +96,7 @@ const projects = [
     src: '',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Universitas Negeri Manado KPI 6 API',
     description: 'A RESTful API to manage the partner collaborations',
     tech: ['Golang', 'Echo (Go)', 'GORM (Go)', 'MySQL'],
@@ -78,7 +105,7 @@ const projects = [
     src: '',
   },
   {
-    id: 9,
+    id: 8,
     title: 'Forum API',
     description: 'A RESTful API to discuss a topic in threads using Clean Architecture',
     tech: ['JavaScript', 'Node.js', 'Hapi.js', 'PostgreSQL', 'GitHub Action'],
@@ -87,7 +114,7 @@ const projects = [
     src: '',
   },
   {
-    id: 10,
+    id: 7,
     title: 'OpenMusic API',
     description: 'A RESTful API to adding and collaborating on a playlist',
     tech: ['JavaScript', 'Node.js', 'Hapi.js', 'Amazon (EC2, S3)', 'PostgreSQL', 'Redis'],
@@ -96,7 +123,7 @@ const projects = [
     src: '',
   },
   {
-    id: 11,
+    id: 6,
     title: 'Clinic Management API',
     description: 'A RESTful API to manage doctor, nurse, queue, and prescriptions',
     tech: ['Golang', 'Echo (Go)', 'GORM (Go)', 'MySQL', 'Docker', 'Amazon EC2', 'GitHub Action', 'OpenAPI'],
@@ -105,7 +132,7 @@ const projects = [
     src: '',
   },
   {
-    id: 12,
+    id: 5,
     title: 'Plant API',
     description: 'A RESTful API to manage shop and selling products',
     tech: ['Golang', 'Echo (Go)', 'GORM (Go)', 'MySQL', 'Docker', 'Amazon EC2', 'GitHub Action', 'Swagger'],
@@ -114,7 +141,7 @@ const projects = [
     src: '',
   },
   {
-    id: 13,
+    id: 4,
     title: 'Shop API',
     description: 'A RESTful API to manage shop and selling products',
     tech: ['Golang', 'Fiber (Go)', 'GORM (Go)', 'MySQL'],
@@ -123,7 +150,7 @@ const projects = [
     src: '',
   },
   {
-    id: 14,
+    id: 3,
     title: 'MyGram API',
     description: 'A social media RESTful API to posting and commenting on photos',
     tech: ['Golang', 'Gin (Go)', 'GORM (Go)', 'PostgreSQL'],
@@ -132,7 +159,7 @@ const projects = [
     src: '',
   },
   {
-    id: 15,
+    id: 2,
     title: 'Order API',
     description: 'A RESTful API to order items',
     tech: ['Golang', 'Gin (Go)', 'GORM (Go)', 'PostgreSQL'],
@@ -141,7 +168,7 @@ const projects = [
     src: '',
   },
   {
-    id: 16,
+    id: 1,
     title: 'Self-Payroll API',
     description: 'A RESTful API that allow employees to do salary withdrawals independently every month',
     tech: ['Golang', 'Echo (Go)', 'GORM (Go)', 'PostgreSQL'],
