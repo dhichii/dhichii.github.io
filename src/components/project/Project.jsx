@@ -3,7 +3,7 @@ import { getAllProject } from "../../data"
 import ProjectList from "./ProjectList"
 
 export default function Project() {
-  const tags = ['all', 'backend', 'frontend']
+  const tags = ['all', 'backend', 'frontend', 'android']
   const [selectedTag, setSelectedTag] = useState('all')
 
   const projects = getAllProject()
